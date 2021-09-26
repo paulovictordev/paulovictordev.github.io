@@ -1,0 +1,105 @@
+:root {
+    /* Dracula Theme Colors */
+    --background: #282a36;
+    --current-line: #44475a;
+    --foreground: #f8f8f2;
+    --comment: #6272a4;
+    --cyan: #8be9fd;
+    --green: #50fa7b;
+    --orange: #ffb86c;
+    --pink: #ff79c6;
+    --purple: #bd93f9;
+    --red: #ff5555;
+    --yellow: #f1fa8c;
+}
+
+body {
+    background-color: var(--background);
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+section {
+    -webkit-box-shadow: 0px 0px 50px 10px rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 0px 50px 10px rgba(0, 0, 0, 0.7);
+    display: block;
+    margin: 0 auto;
+    max-width: 320px;
+    margin-top: 100px;
+    background-color: var(--foreground);
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 12px;
+}
+
+header {
+    border-radius: 10px;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.foto {
+    width: 150px;
+    height: 150px;
+    margin: 24px auto;
+    border-radius: 100%;
+    border: 8px solid white;
+    box-shadow: 0px 10px 20px -6px rgb(0 0 0 / 60%);
+}
+
+.titulo {
+    text-align: center;
+}
+
+.titulo h1 {
+    color: var(--current-line);
+    font-size: 1.6rem;
+}
+
+.titulo h2 {
+    color: var(--current-line);
+    font-size: 1rem;
+}
+
+.link {
+    width: 100%;
+}
+
+.link ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-inline-start: 0;
+}
+
+.link li {
+    list-style: none;
+}
+
+.link-icon a {
+    text-decoration: none;
+    color: var(--comment);
+    font-size: 1.4rem;
+}
+
+.link-icon a:hover {
+    color: var(--green);
+    transition-duration: 0.5s;
+}
+
+@media screen and (min-width: 768px) {
+    section {
+        max-width: 760px
+    }
+    .link {
+        width: 40%;
+    }
+    .link-icon a {
+        font-size: 1.8rem;
+    }
+}
